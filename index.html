@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>小米商城首页复刻</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ① 顶部导航（两层） -->
+    <div class="topbar">
+        <div class="container">
+            <ul class="topbar-nav">
+                <li><a href="#">小米官网</a></li>
+                <li><a href="#">小米商城</a></li>
+                <li><a href="#">小米澎湃OS</a></li>
+                <li><a href="#">小米汽车</a></li>
+                <li><a href="#">小米影像</a></li>
+                <li><a href="#">云服务</a></li>
+                <li><a href="#">IoT</a></li>
+                <li><a href="#">有品</a></li>
+                <li><a href="#">小爱开放平台</a></li>
+            </ul>
+
+            <ul class="topbar-info">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">消息通知</a></li>
+                <li><a href="#">我的订单</a></li>
+                <li class="cart"><a href="#">购物车（0）</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <a class="logo" href="#">mi</a>
+
+            <nav class="header-nav">
+                <a href="#">全部商品分类</a>
+                <a href="#">手机</a>
+                <a href="#">电视</a>
+                <a href="#">家电</a>
+                <a href="#">笔记本 平板</a>
+                <a href="#">出行 穿戴</a>
+                <a href="#">耳机 音箱</a>
+            </nav>
+
+            <div class="header-search">
+                <input type="text" placeholder="小米手机">
+                <button type="button">搜索</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ② 轮播 + 服务入口 -->
+    <section class="hero container">
+
+        <div class="hero-swiper">
+            <a class="hero-slide" href="#">
+                <img src="images/banner-1.webp" alt="米家洗鞋机 3kg">
+            </a>
+
+            <button class="hero-arrow prev" aria-label="上一张">‹</button>
+            <button class="hero-arrow next" aria-label="下一张">›</button>
+
+            <div class="hero-dots">
+                <i class="active"></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+        </div>
+
+        <div class="hero-sub">
+
+            <!-- 左：6 个服务入口 -->
+            <ul class="channel">
+                <li><a href="#"><img src="images/channel-1.png" alt=""><span>保障服务</span></a></li>
+                <li><a href="#"><img src="images/channel-2.png" alt=""><span>企业团购</span></a></li>
+                <li><a href="#"><img src="images/channel-3.png" alt=""><span>F码通道</span></a></li>
+                <li><a href="#"><img src="images/channel-4.png" alt=""><span>米粉卡</span></a></li>
+                <li><a href="#"><img src="images/channel-5.png" alt=""><span>以旧换新</span></a></li>
+                <li><a href="#"><img src="images/channel-6.png" alt=""><span>话费充值</span></a></li>
+            </ul>
+
+            <!-- 右：3 个促销位 -->
+            <ul class="promo">
+                <li><a href="#"><img src="images/promo-1.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/promo-2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/promo-3.png" alt=""></a></li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- ③④ 七个商品区块 × 7 -->
+    <main class="container">
+
+        <section class="brick">
+            <div class="box-hd">
+                <h2 class="title">手机</h2>
+                <a class="more" href="#">查看更多 <span>&#8250;</span></a>
+            </div>
+            <div class="box-bd">
+                <a class="brick-promo" href="#">
+                    <img src="images/box1-l.webp" alt="手机">
+                </a>
+                <ul class="brick-list">
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box1-1.webp" alt="REDMI K100"></div>
+                            <h3 class="title">REDMI K100</h3>
+                            <p class="price"><span class="num">3499</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box1-2.webp" alt="REDMI Note 17 Pro 焕新版"></div>
+                            <h3 class="title">REDMI Note 17 Pro 焕新版</h3>
+                            <p class="price"><span class="num">1599</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box1-3.webp" alt="Xiaomi 18 Pro Max"></div>
+                            <h3 class="title">Xiaomi 18 Pro Max</h3>
+                            <p class="price"><span class="num">6999</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box1-4.webp" alt="Xiaomi 18 Pro"></div>
+                            <h3 class="title">Xiaomi 18 Pro</h3>
+                            <p class="price"><span class="num">5999</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box1-5.webp" alt="Xiaomi 18 Fold"></div>
+                            <h3 class="title">Xiaomi 18 Fold</h3>
+                            <p class="price"><span class="num">10999</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box1-6.webp" alt="REDMI K100 Pro Max"></div>
+                            <h3 class="title">REDMI K100 Pro Max</h3>
+                            <p class="price"><span class="num">4499</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box1-7.webp" alt="REDMI K100 Pro"></div>
+                            <h3 class="title">REDMI K100 Pro</h3>
+                            <p class="price"><span class="num">3999</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box1-8.webp" alt="REDMI 17 5G"></div>
+                            <h3 class="title">REDMI 17 5G</h3>
+                            <p class="price"><span class="num">999</span>元起1099元</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="brick">
+            <div class="box-hd">
+                <h2 class="title">智能穿戴</h2>
+                <a class="more" href="#">查看更多 <span>&#8250;</span></a>
+            </div>
+            <div class="box-bd">
+                <a class="brick-promo" href="#">
+                    <img src="images/box2-l.webp" alt="智能穿戴">
+                </a>
+                <ul class="brick-list">
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box2-1.webp" alt="REDMI Clip Neo"></div>
+                            <h3 class="title">REDMI Clip Neo</h3>
+                            <p class="price"><span class="num">399</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box2-2.webp" alt="REDMI 头戴降噪耳机"></div>
+                            <h3 class="title">REDMI 头戴降噪耳机</h3>
+                            <p class="price"><span class="num">279</span>元349元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box2-3.webp" alt="Xiaomi 耳夹式耳机"></div>
+                            <h3 class="title">Xiaomi 耳夹式耳机</h3>
+                            <p class="price"><span class="num">749</span>元849元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box2-4.webp" alt="REDMI Buds 8"></div>
+                            <h3 class="title">REDMI Buds 8</h3>
+                            <p class="price"><span class="num">229</span>元249元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box2-5.webp" alt="REDMI Buds 8 活力版"></div>
+                            <h3 class="title">REDMI Buds 8 活力版</h3>
+                            <p class="price"><span class="num">99</span>元119元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box2-6.webp" alt="REDMI Buds 8 青春版"></div>
+                            <h3 class="title">REDMI Buds 8 青春版</h3>
+                            <p class="price"><span class="num">139</span>元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box2-7.webp" alt="REDMI Buds 8 Pro"></div>
+                            <h3 class="title">REDMI Buds 8 Pro</h3>
+                            <p class="price"><span class="num">369</span>元399元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box2-8.webp" alt="Xiaomi Buds 6"></div>
+                            <h3 class="title">Xiaomi Buds 6</h3>
+                            <p class="price"><span class="num">600</span>元</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="brick">
+            <div class="box-hd">
+                <h2 class="title">笔记本 | 平板</h2>
+                <a class="more" href="#">查看更多 <span>&#8250;</span></a>
+            </div>
+            <div class="box-bd">
+                <a class="brick-promo" href="#">
+                    <img src="images/box3-l.webp" alt="笔记本 | 平板">
+                </a>
+                <ul class="brick-list">
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box3-1.webp" alt="REDMI Book 14 2027"></div>
+                            <h3 class="title">REDMI Book 14 2027</h3>
+                            <p class="price"><span class="num">6799</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box3-2.webp" alt="REDMI Book 16 2027"></div>
+                            <h3 class="title">REDMI Book 16 2027</h3>
+                            <p class="price"><span class="num">6999</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box3-3.webp" alt="REDMI Book Pro 16 2026"></div>
+                            <h3 class="title">REDMI Book Pro 16 2026</h3>
+                            <p class="price"><span class="num">7899</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box3-4.webp" alt="REDMI Book Pro 14 2026"></div>
+                            <h3 class="title">REDMI Book Pro 14 2026</h3>
+                            <p class="price"><span class="num">7699</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box3-5.webp" alt="Xiaomi Book Pro 14"></div>
+                            <h3 class="title">Xiaomi Book Pro 14</h3>
+                            <p class="price"><span class="num">9499</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box3-6.webp" alt="REDMI Book 16 2026"></div>
+                            <h3 class="title">REDMI Book 16 2026</h3>
+                            <p class="price"><span class="num">6699</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box3-7.webp" alt="REDMI Book 14 2026"></div>
+                            <h3 class="title">REDMI Book 14 2026</h3>
+                            <p class="price"><span class="num">6499</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box3-8.webp" alt="REDMI Book 14 锐龙版 2025"></div>
+                            <h3 class="title">REDMI Book 14 锐龙版 2025</h3>
+                            <p class="price"><span class="num">3799</span>元起</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="brick">
+            <div class="box-hd">
+                <h2 class="title">家电</h2>
+                <a class="more" href="#">查看更多 <span>&#8250;</span></a>
+            </div>
+            <div class="box-bd">
+                <a class="brick-promo" href="#">
+                    <img src="images/box4-l.webp" alt="家电">
+                </a>
+                <ul class="brick-list">
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box4-1.webp" alt="小米电视S Pro Mini LED系列"></div>
+                            <h3 class="title">小米电视S Pro Mini LED系列</h3>
+                            <p class="price"><span class="num">4999</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box4-2.webp" alt="小米电视S Mini LED 2026 系列"></div>
+                            <h3 class="title">小米电视S Mini LED 2026 系列</h3>
+                            <p class="price"><span class="num">4199</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box4-3.webp" alt="米家冰箱 十字430L 2026款"></div>
+                            <h3 class="title">米家冰箱 十字430L 2026款</h3>
+                            <p class="price"><span class="num">1799</span>元2299元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box4-4.webp" alt="米家洗衣机Pro 超电解智投 洗烘12kg"></div>
+                            <h3 class="title">米家洗衣机Pro 超电解智投 洗烘12kg</h3>
+                            <p class="price"><span class="num">2999</span>元3999元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box4-5.webp" alt="米家冰箱 对开门系列"></div>
+                            <h3 class="title">米家冰箱 对开门系列</h3>
+                            <p class="price"><span class="num">1999</span>元起</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box4-6.webp" alt="巨省电 小米空调 1.5匹新1级能效"></div>
+                            <h3 class="title">巨省电 小米空调 1.5匹新1级能效</h3>
+                            <p class="price"><span class="num">1699</span>元2499元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box4-7.webp" alt="巨省电Pro 立式3匹 超一级能效 米家空调"></div>
+                            <h3 class="title">巨省电Pro 立式3匹 超一级能效 米家空调</h3>
+                            <p class="price"><span class="num">3909</span>元6499元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box4-8.webp" alt="米家冰箱无霜三门216L"></div>
+                            <h3 class="title">米家冰箱无霜三门216L</h3>
+                            <p class="price"><span class="num">1199</span>元</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="brick">
+            <div class="box-hd">
+                <h2 class="title">生活电器</h2>
+                <a class="more" href="#">查看更多 <span>&#8250;</span></a>
+            </div>
+            <div class="box-bd">
+                <a class="brick-promo" href="#">
+                    <img src="images/box5-l.webp" alt="生活电器">
+                </a>
+                <ul class="brick-list">
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box5-1.webp" alt="米家智能变频循环扇Pro"></div>
+                            <h3 class="title">米家智能变频循环扇Pro</h3>
+                            <p class="price"><span class="num">499</span>元599元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box5-2.webp" alt="米家智能直流变频落地扇1X 升级版"></div>
+                            <h3 class="title">米家智能直流变频落地扇1X 升级版</h3>
+                            <p class="price"><span class="num">299</span>元329元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box5-3.webp" alt="米家落地扇"></div>
+                            <h3 class="title">米家落地扇</h3>
+                            <p class="price"><span class="num">219</span>元299元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box5-4.webp" alt="米家直流变频台式循环扇"></div>
+                            <h3 class="title">米家直流变频台式循环扇</h3>
+                            <p class="price"><span class="num">279</span>元349元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box5-5.webp" alt="米家智能直流变频循环落地扇 电池版"></div>
+                            <h3 class="title">米家智能直流变频循环落地扇 电池版</h3>
+                            <p class="price"><span class="num">599</span>元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box5-6.webp" alt="米家直流变频落地扇 Pro"></div>
+                            <h3 class="title">米家直流变频落地扇 Pro</h3>
+                            <p class="price"><span class="num">399</span>元499元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box5-7.webp" alt="米家智能蒸发式冷风扇"></div>
+                            <h3 class="title">米家智能蒸发式冷风扇</h3>
+                            <p class="price"><span class="num">499</span>元599元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box5-8.webp" alt="米家智能直流变频塔扇2"></div>
+                            <h3 class="title">米家智能直流变频塔扇2</h3>
+                            <p class="price"><span class="num">319</span>元</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="brick">
+            <div class="box-hd">
+                <h2 class="title">厨房电器</h2>
+                <a class="more" href="#">查看更多 <span>&#8250;</span></a>
+            </div>
+            <div class="box-bd">
+                <a class="brick-promo" href="#">
+                    <img src="images/box6-l.webp" alt="厨房电器">
+                </a>
+                <ul class="brick-list">
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box6-1.webp" alt="米家前置过滤器"></div>
+                            <h3 class="title">米家前置过滤器</h3>
+                            <p class="price"><span class="num">259</span>元499元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box6-2.webp" alt="米家即热管线机"></div>
+                            <h3 class="title">米家即热管线机</h3>
+                            <p class="price"><span class="num">999</span>元1299元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box6-3.webp" alt="米家双核净水器 1200G Pro"></div>
+                            <h3 class="title">米家双核净水器 1200G Pro</h3>
+                            <p class="price"><span class="num">1699</span>元3499元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box6-4.webp" alt="米家净水器1600G"></div>
+                            <h3 class="title">米家净水器1600G</h3>
+                            <p class="price"><span class="num">2499</span>元3499元</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="brick">
+            <div class="box-hd">
+                <h2 class="title">智能家居</h2>
+                <a class="more" href="#">查看更多 <span>&#8250;</span></a>
+            </div>
+            <div class="box-bd">
+                <a class="brick-promo" href="#">
+                    <img src="images/box7-l.webp" alt="智能家居">
+                </a>
+                <ul class="brick-list">
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box7-1.webp" alt="Xiaomi 智能音箱 Pro"></div>
+                            <h3 class="title">Xiaomi 智能音箱 Pro</h3>
+                            <p class="price"><span class="num">329</span>元369元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box7-2.webp" alt="Xiaomi 智能音箱"></div>
+                            <h3 class="title">Xiaomi 智能音箱</h3>
+                            <p class="price"><span class="num">199</span>元249元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box7-3.webp" alt="Xiaomi Sound 2 Pro"></div>
+                            <h3 class="title">Xiaomi Sound 2 Pro</h3>
+                            <p class="price"><span class="num">1299</span>元1699元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box7-4.webp" alt="Xiaomi 智能家庭屏 Max 27"></div>
+                            <h3 class="title">Xiaomi 智能家庭屏 Max 27</h3>
+                            <p class="price"><span class="num">3399.15</span>元3999元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box7-5.webp" alt="Xiaomi 智能家庭屏 11"></div>
+                            <h3 class="title">Xiaomi 智能家庭屏 11</h3>
+                            <p class="price"><span class="num">1299</span>元1499元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box7-6.webp" alt="Xiaomi智能家庭屏 10"></div>
+                            <h3 class="title">Xiaomi智能家庭屏 10</h3>
+                            <p class="price"><span class="num">839</span>元999元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box7-7.webp" alt="Xiaomi 智能家庭屏 8 云台版"></div>
+                            <h3 class="title">Xiaomi 智能家庭屏 8 云台版</h3>
+                            <p class="price"><span class="num">649</span>元899元</p>
+                        </a>
+                    </li>
+                    <li class="brick-item">
+                        <a href="#">
+                            <div class="figure"><img src="images/box7-8.webp" alt="小米小爱音箱Play 增强版"></div>
+                            <h3 class="title">小米小爱音箱Play 增强版</h3>
+                            <p class="price"><span class="num">129</span>元</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ⑤ 页脚 -->
+    <footer class="footer">
+        <div class="footer-service">
+            <div class="container">6 个服务承诺</div>
+        </div>
+        <div class="footer-links">
+            <div class="container">6 组链接 + 客服热线</div>
+        </div>
+        <div class="footer-info">
+            <div class="container">logo + 备案信息</div>
+        </div>
+    </footer>
+
+</body>
+</html>
